@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = 'lqss/jenkins'
+    registry = 'hohioh/jenkins'
     registryCredential = 'dockerHub'
     dockerImage = ''
   }
@@ -21,7 +21,7 @@ pipeline {
     stage('Git') {
       steps {
         echo 'Cloning'
-        git branch: 'spring-for-jenkins-with-docker', url: 'https://github.com/LQss11/devops-pipeline.git'
+        git branch: 'master', url: 'https://github.com/ouniamine/spring-pfe.git'
       }
     }
     stage('MVN CLEAN') {
